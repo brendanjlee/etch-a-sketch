@@ -1,0 +1,38 @@
+:root {
+  --grid-size: 16;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grids {
+  max-width: 500px;
+  min-height: 500px;
+  margin: 2rem auto;
+  display: grid;
+}
+
+.tile {
+  border-width: thin;
+}
+
+button {
+  text-align: center;
+  text-decoration: none;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  .grids {
+    max-width: 300px;
+    min-height: 300px;
+  }
+}
